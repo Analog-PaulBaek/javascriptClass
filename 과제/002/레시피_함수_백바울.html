@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let a = "마늘";
+        let b = "올리브오일";
+        let c = "파스타";
+        let d = "페퍼론치노";
+
+
+        function pasta(a,b,c,d){
+            alert(c + "를 8~9분 삶는다.");
+            alert(a+ "과 " + d + "를 " + b + "에 볶는다.");
+            alert("잘 삶아진 " + c + "를 넣어 소스에 스며들게 한다.");
+            alert("완성 !");
+            return "https://cdn.mkhealth.co.kr/news/photo/201810/img_MKH181030006_0.jpg"
+        }
+
+        let result = pasta(a,b,c,d) ; 
+        document.write("<img src="+result+">")
+
+    </script>
+</body>
+</html>
