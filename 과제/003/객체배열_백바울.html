@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div{
+        display: none;
+      }
+      div img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>오늘 영화 뭐보지?</h2>
+    <button onclick="recommendShow()">추천 LIST</button>
+    <button onclick="allShow()">모든 LIST</button>
+    <div id="movie1">
+      <img
+        src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240603_250%2F1717391161610hLGGJ_JPEG%2Fmovie_image.jpg"
+        alt=""
+      /> <p id="escape"></p>
+    </div>
+    <div id="movie2">
+      <img
+        src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240705_147%2F1720142916385Hwze0_JPEG%2Fmovie_image.jpg"
+        alt=""
+      /> <p id="hijack_1971"></p>
+    </div>
+    <div id="movie3">
+      <img
+        src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240703_290%2F17199947355505JCbb_JPEG%2Fmovie_image.jpg"
+        alt=""
+      /> <p  id="project_silence"></p>
+    </div>
+
+    <script>
+        
+        function allShow(){
+            document.getElementById("movie1").style.display = "block";
+            document.getElementById("movie2").style.display = "block";
+            document.getElementById("movie3").style.display = "block";
+        }
+            
+      let escape = [
+                    "탈주",
+                    "이제훈, 구교환",
+                    "이종필",
+                    "'내 앞 길 내가 정했습니다' 휴전선 인근 북한 최전방 군부대. 10년 만기 제대를 앞둔 중사 ‘규남’(이제훈)은 미래를 선택할 수 없는 북을 벗어나 원하는 것을 해 볼 수 있는 철책 너머로의 탈주를 준비한다. 그러나, ‘규남’의 계획을 알아챈 하급 병사 ‘동혁’(홍사빈)이 먼저 탈주를 시도하고, 말리려던 ‘규남’까지 졸지에 탈주병으로 체포된다. “허튼 생각 말고 받아들여. 이것이 니 운명이야” 탈주병 조사를 위해 부대로 온 보위부 소좌 ‘현상’(구교환)은 어린 시절 알고 지내던 ‘규남’을 탈주병을 체포한 노력 영웅으로 둔갑시키고 사단장 직속보좌 자리까지 마련해주며 실적을 올리려 한다. 하지만 ‘규남’이 본격적인 탈출을 감행하자 ‘현상’은 물러설 길 없는 추격을 시작한다.",
+                ];
+                document.getElementById("escape").innerHTML= "제목 : " + (escape[0]) + "<br>주연 : "+ (escape[1]) + "<br>감독 : " + (escape[2]) + "<br>줄거리 : " + (escape[3]);
+                
+      let hijack = [
+                    "하이재킹",
+                    "하정우,여진구",
+                    "김성한",
+                    "1971년 겨울 속초공항 여객기 조종사 태인(하정우)과 규식(성동일)은 김포행 비행에 나선다. 승무원 옥순(채수빈)의 안내에 따라 탑승 중인 승객들의 분주함도 잠시, 이륙한지 얼마 되지 않아 사제폭탄이 터지며 기내는 아수라장이 된다. '지금부터 이 비행기 이북 간다' 여객기를 통째로 납치하려는 용대(여진구)는 조종실을 장악하고 무작정 북으로 기수를 돌리라 협박한다. 폭발 충격으로 규식은 한 쪽 시력을 잃고 혼란스러운 기내에서 절체절명의 상황에 처한 태인. 이들은 여객기를 무사히 착륙시키기 위한 사투를 시작하는데... 대한민국 상공 여객기 납치 사건 이 비행에 모두가 목숨을 걸었다! <하이재킹>",
+                ];
+                document.getElementById("hijack_1971").innerHTML= "제목 : " + (hijack[0]) + "<br>주연 : "+ (hijack[1]) + "<br>감독 : " + (hijack[2]) + "<br>줄거리 : " + (hijack);
+
+      let silence = [
+                    "탈출",
+                    "이선균,주지훈",
+                    "김태곤",
+                    "붕괴 위기의 공항대교, 생존자 전원이 타겟이 되었다. 기상 악화로 한치 앞도 구분할 수 없는 공항대교. 연쇄 추돌 사고와 폭발로 붕괴 위기에 놓인 다리 위에 사람들이 고립된다. 이 때 극비리에 이송 중이던 '프로젝트 사일런스'의 군사용 실험견들이 풀려나고 모든 생존자가 그들의 타겟이 되어 무차별 공격당하는 통제불능의 상황이 벌어진다. 공항으로 향하던 안보실 행정관(이선균)부터 사고를 수습하려고 현장을 찾은 렉카 기사(주지훈), 그리고 실험견들을 극비리에 이송 중이던 '프로젝트 사일런스'의 책임연구원(김희원)까지. 사상 최악의 연쇄 재난 발생, 살아남기 위한 극한의 사투가 시작된다!",
+                 ];
+                 document.getElementById("project_silence").innerHTML= "제목 : " + (silence[0]) + "<br>주연 : "+ (silence[1]) + "<br>감독 : " + (silence[2]) + "<br>줄거리 : " + (silence);
+
+    </script>
+  </body>
+</html>

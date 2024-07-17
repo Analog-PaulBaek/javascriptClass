@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myName(name) {
+        alert("당신의 이름은?");
+        name();
+      }
+
+      myName(function () {
+        alert("백바울");
+      });
+
+      setTimeout(function(){
+        alert("당신의 나이는?")
+      },3000);
+        
+      function myAge(){
+        alert("30살입니다.");
+      }
+
+      setTimeout(myAge, 5000);
+    </script>
+  </body>
+</html>
